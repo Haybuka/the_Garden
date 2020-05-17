@@ -316,6 +316,11 @@ footer li.otherPlants_six {
 	grid-column: 12/13;
 }
 
+footer li.otherPlants_last {
+	display: none;
+	grid-column: 1/2;
+}
+
 small {
 	font-weight: 400;
 }
@@ -324,14 +329,14 @@ small {
 @media screen and (max-width: 768px) {
 	body {
 		background-color: white;
-		height: 500px;
-		overflow: hidden;
+		/* height: 500px;
+		overflow: hidden; */
 	}
 
 	#wrapper {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: repeat(5, minmax(10px, auto));
+		grid-template-rows: repeat(5, minmax(0, auto));
 		font-size: 0.6em;
 	}
 
@@ -474,47 +479,61 @@ small {
 	/* styling the footer */
 
 	footer ul {
-		margin-top: 5px;
-		padding: 10px;
+		padding: 5px;
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: repeat(3, minmax(100px, auto));
+		grid-template-rows: repeat(3, minmax(0, auto));
 	}
 
 	footer img {
-		width: 100px;
+		width: 120px;
 	}
 
 	footer ul li:nth-child(6) {
-		margin-top: 55px;
+		align-items: center;
+		justify-items: ;
+		grid-row: 2/3;
 	}
 
 	footer li.otherPlants_one {
-		grid-column: 2/4;
+		grid-column: 3/6;
 	}
 
 	footer li.otherPlants_two {
-		grid-column: 4/6;
+		grid-column: 5/8;
+		grid-row: 2/3;
+
 	}
 
 	footer li.otherPlants_three {
-		grid-column: 6/8;
+		grid-column: 1/3;
+		grid-row: 2/3;
 	}
 
 	footer li.otherPlants_four {
-		grid-column: 8/10;
+		grid-column: 11/13;
+		grid-row: 1/2;
 	}
 
 	footer li.otherPlants_five {
-		grid-column: 10/12;
+		grid-column: 7/10;
 	}
 
 	footer li.otherPlants_six {
 		grid-column: 12/13;
 	}
 
+	footer li.otherPlants_last {
+		display: inline-block;
+		grid-column: 9/11;
+		grid-row: 2/3;
+		/* margin-bottom: -40px; */
+	}
+
+
 	small {
 		font-weight: 400;
+		margin-left: 20px;
 	}
 }
 
