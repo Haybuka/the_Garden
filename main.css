@@ -12,6 +12,9 @@ body {
     /* overflow: hidden; */
 }
 
+#wrapper {
+    display: grid;
+}
 
 nav header img {
     width: 25px;
@@ -36,6 +39,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 5px;
+    margin-bottom: 30px;
 }
 
 header {
@@ -43,11 +47,11 @@ header {
 }
 
 ul.mainNav {
-    grid-column: 4/10;
+    grid-column: 5/11;
 }
 
 ul.icon {
-    grid-column: 11/13;
+    grid-column: 12/13;
 }
 
 nav li a {
@@ -103,25 +107,27 @@ nav .mainNav_sixth {
 /* Nav icon Grid */
 nav li.icon_first {
     grid-column: 1/2;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 nav li.icon_second {
     grid-column: 3/4;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 nav li.icon_third {
     grid-column: 5/6;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 /* styling the Main */
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, minmax(70px, auto));
+    grid-template-rows: repeat(4, minmax(0, auto));
+    margin-bottom: 10px;
 }
 
 /* styling the left main */
@@ -201,7 +207,7 @@ main #right {
 
 /* styling the right image */
 #right img {
-    width: 370px;
+    width: 350px;
 }
 
 /* styling the sideBarslider */
@@ -263,4 +269,57 @@ a {
 
 #sideSlider ul li.sideBar_seventh {
     grid-row: 7/8;
+}
+
+
+/* styling the footer */
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: -5px;
+    list-style-type: none;
+    margin-bottom: 0;
+    background-color: #eeeeee;
+    padding: 5px;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer ul li:nth-child(6) {
+    margin-top: 55px;
+}
+
+footer li.otherPlants_one {
+    grid-column: 2/4;
+}
+
+footer li.otherPlants_two {
+    grid-column: 4/6;
+}
+
+footer li.otherPlants_three {
+    grid-column: 6/8;
+}
+
+footer li.otherPlants_four {
+    grid-column: 8/10;
+}
+
+footer li.otherPlants_five {
+    grid-column: 10/12;
+}
+
+footer li.otherPlants_six {
+    grid-column: 12/13;
+}
+
+small {
+    font-weight: 400;
 }
