@@ -132,7 +132,7 @@ main {
 
 /* styling the left main */
 main #left {
-    grid-column: 3/7;
+    grid-column: 4/8;
     grid-row: 2/3;
 }
 
@@ -201,7 +201,7 @@ main #left {
 
 /* styling the right main */
 main #right {
-    grid-column: 7/12;
+    grid-column: 8/12;
     grid-row: 2/3;
 }
 
@@ -213,7 +213,7 @@ main #right {
 /* styling the sideBarslider */
 #sideSlider {
     grid-row: 2/3;
-    grid-column: 2/3;
+    grid-column: 3/4;
     margin-left: -45px;
 }
 
