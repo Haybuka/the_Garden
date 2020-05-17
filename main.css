@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    font-weight: 700;
+
+}
+
+
+nav header img {
+    width: 25px;
+}
+
+nav header h2 {
+    display: inline-block;
+    color: #196e34;
+}
+
+nav ul {
+    padding: 0;
+    display: grid;
+}
+
+nav li {
+    list-style: none;
+}
+
+/* Display Grid starts here */
+nav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 5px;
+}
+
+header {
+    grid-column: 2/4;
+}
+
+ul.mainNav {
+    grid-column: 4/10;
+}
+
+ul.icon {
+    grid-column: 11/13;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+nav .active {
+    border-bottom-right-radius: 25px;
+    border-bottom-right-radius: 112px;
+    border-top-left-radius: 112px;
+    background: #d2dce8;
+    box-shadow: 3px 5px 5px #b3bbc5;
+    padding: 5px 20px;
+    margin-top: -5px;
+}
+
+
+/* grid for Uls */
+nav ul {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 25px;
+}
+
+nav .mainNav_first {
+    grid-column: 1/2;
+}
+
+nav .mainNav_second {
+    grid-column: 3/4;
+}
+
+nav .mainNav_third {
+    grid-column: 5/6;
+}
+
+nav .mainNav_fourth {
+    grid-column: 7/8;
+}
+
+nav .mainNav_fifth {
+    grid-column: 9/12;
+}
+
+nav .mainNav_sixth {
+    grid-column: 12/13;
+}
+
+/* Nav icon Grid */
+nav li.icon_first {
+    grid-column: 1/2;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav li.icon_second {
+    grid-column: 3/4;
+}
+
+nav li.icon_third {
+    grid-column: 5/6;
+    margin-left: 10px;
+    margin-right: 10px;
+}
